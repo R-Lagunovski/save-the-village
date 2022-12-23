@@ -620,8 +620,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 68.000015, y: -59}
-  m_SizeDelta: {x: 40, y: 30}
+  m_AnchoredPosition: {x: 85.37, y: -59}
+  m_SizeDelta: {x: 74.74, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &152085271
 MonoBehaviour:
@@ -6113,7 +6113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentSpr: {fileID: 21300000, guid: ac169056338d3da4e961002917b13f8c, type: 3}
   nextSpr: {fileID: 21300000, guid: f07eaf135edbe1c45ad894dfc5c1f81c, type: 3}
-  Audio: {fileID: 1906282335}
+  Audio: {fileID: 519420029}
 --- !u!1 &1537305730
 GameObject:
   m_ObjectHideFlags: 0
