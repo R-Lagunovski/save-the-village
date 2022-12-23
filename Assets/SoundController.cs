@@ -5,7 +5,7 @@ public class SoundController : MonoBehaviour
 {
     public Sprite currentSpr;
     public Sprite nextSpr;
-    public AudioSource Audio;
+    public AudioListener Audio;
 
     private Button btn;
 
@@ -16,10 +16,10 @@ public class SoundController : MonoBehaviour
 
     public void Mute()
     {
-        if (Audio.isPlaying)
-            Audio.Pause();
+        if (Audio.enabled)
+            Audio.enabled = false;
         else
-            Audio.Play();
+            Audio.enabled = true;
 
         btn.image.overrideSprite = nextSpr;
         (currentSpr, nextSpr) = (nextSpr, currentSpr);

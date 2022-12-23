@@ -106,6 +106,7 @@ public class GameScript : MonoBehaviour
         
         if (WarTimer.isEnd)
         {
+            //check if time to run first wave with enemy.
             if (firstWaveWithEnemy == 0)
             {
                 WarTextObject.SetActive(false);
@@ -137,7 +138,7 @@ public class GameScript : MonoBehaviour
         UpdateText();
     }
 
-    // Update is called once per frame
+    // Update text
     private void UpdateText()
     {
         SettlerText.text = settlersCount.ToString();
@@ -148,6 +149,7 @@ public class GameScript : MonoBehaviour
         FirstWaveNumberText.text = firstWaveWithEnemy.ToString();
     }
 
+    //Hire settler
     public void HireSettler()
     {
         if ((wheatCount - settlerCost) >= 0)
@@ -159,6 +161,7 @@ public class GameScript : MonoBehaviour
         
     }
 
+    //Hire warrior
     public void HireWarrior()
     {
         if ((wheatCount - warriorCost) >= 0)
